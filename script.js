@@ -152,7 +152,7 @@ function addToCart(imgUrl){
 
   itemsStorage.push([imgUrl,stripePId,price, itemName,sizing]);
   localStorage.setItem("items", JSON.stringify(itemsStorage));
-  location.replace("https://kl9y.com/cart");
+  location.replace("https://kalycards.com/cart");
 }
 
 
