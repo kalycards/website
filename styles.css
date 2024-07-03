@@ -2,7 +2,7 @@
 @font-face { font-family: Kl9yFont; font-weight: bold; src: url(assets/Akira_Expanded_Demo.otf);}
 
 body{
-    background-color: rgb(44, 44, 44);
+    background-color: #121212;
     max-width: 100%;
     overflow-x: hidden;
     text-align: center; 
@@ -66,6 +66,9 @@ body{
     width: 100%;
     
     height:auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
     
 }
 .imgA{ 
@@ -73,6 +76,13 @@ body{
   text-decoration: none;
   align-items: center;
   text-align: center;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  border: 1px solid #1e1e1e;
+  padding-bottom: 15px;
+  box-shadow: 0 0 10px #000000;
+  
+  
 }
 .productLines{
     display: flex;
