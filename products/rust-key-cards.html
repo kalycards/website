@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Rust Key Card</title>
+        <link rel="icon" type="image/x-icon" href="../imgs/KlayCardPurpsm.png">
+        <meta name="description" content="Rust Key Card | Real Plastic Key Cards | Red Key Card Blue Key Card Green Key Card">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    <body>
+        <script src ="../script.js"></script>
+        <div class="cartContainer">
+            <a href="https://kalycards.com/cart"><img alt="cart" class="cart" src="../assets/cart.png"></a> 
+            <script>totalCart()</script>
+        </div>
+        <div class="logoHolder">
+            <a href="https://kalycards.com"><img alt="Klay Card Logo" class="kl9yLogo2" src="../imgs/KlayCardPurpsm.png"></a>
+        </div>
+        
+        
+
+
+        
+        <div class="prodMain">
+            <div class="prodImg">
+                <img alt="product image" id="productImage" src="../imgs/cards/rust-red-key-card/rust-red-key-card.jpg" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+                <div class="imageThumbnails">
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/rust-red-key-card/rust-red-key-card.jpg" onclick="changeRadio('colorWhite')">
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/rust-red-key-card/spin.gif" onclick="changeRadio('colorWhite'); changeImage2(this)">
+
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/rust-blue-key-card/blue-key-card.jpg" onclick="changeRadio('colorBlue')">
+        
+                    
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/rust-green-key-card/rust-green-key-card.jpg" onclick="changeRadio('colorGreen')">
+       
+
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/rust-red-key-card/all-key-cards.jpg" onclick="changeRadio('colorAll')">
+
+                    
+                
+                </div>
+            </div>
+            <div class="prodDetails">
+                <h1>RUST KEY CARD</h1>
+                <p class="priceText" id="priceTextLine">$ 6</p>
+                <div id="productIdForCart" class="dev">price_1PYeCRCSLHJXbRq8X0pKaT8D</div>
+
+                <div class="colorOptions">
+                    <input type="radio" id="colorWhite" name="color" value="white" onchange="updateBuyNowLink2(`window.location.href='https://buy.stripe.com/dR614t55167raD65km';` ,'../imgs/cards/rust-red-key-card/rust-red-key-card.jpg',
+                    ['price_1PYeCRCSLHJXbRq8X0pKaT8D'], `$ 6`
+                    )" checked>
+                    <label for="colorWhite">RED</label>
+
+                    <input type="radio" id="colorBlue" name="color" value="blue" onchange="updateBuyNowLink2(`window.location.href='https://buy.stripe.com/9AQ3cB5510N78uYbIP';`, '../imgs/cards/rust-blue-key-card/blue-key-card.jpg',
+                    ['price_1PYfcRCSLHJXbRq8GGVFfXOM'], `$ 6`
+                    )" >
+                    <label for="colorBlue">BLUE</label>
+
+
+
+                    <input type="radio" id="colorGreen" name="color" value="green" onchange="updateBuyNowLink2(`window.location.href='https://buy.stripe.com/9AQ8wV0OL1Rb9z24gm';`, '../imgs/cards/rust-green-key-card/rust-green-key-card.jpg',
+                    ['price_1PYfdFCSLHJXbRq8R47u7hzr'], `$ 6`
+                    )" >
+                    <label for="colorGreen">GREEN</label>
+
+                    <input type="radio" id="colorAll" name="color" value="all" onchange="updateBuyNowLink2(`window.location.href='https://buy.stripe.com/eVa8wVbtp67rbHa7sx';`, '../imgs/cards/rust-red-key-card/all-key-cards.jpg',
+                    ['price_1PYfe2CSLHJXbRq8trUeio9n'], `$ 15`
+                    )" >
+                    <label for="colorAll">ALL</label>
+            
+
+                    
+                </div>
+                <button id="buyNowBtn" class="buyNowBtn" onclick="window.location.href='https://buy.stripe.com/dR614t55167raD65km';">BUY NOW</button>
+   
+                <button  class="buyNowBtn" onclick="addToCart(productImage.src)">ADD TO CART</button> 
+
+                <p class = "detailText">DETAILS</p>
+                <p class="detailText">3.375in x 2.125in, 30mil thick</p>
+                <p class="detailText">PVC Plastic</p>
+                <p class="detailText">Professionally printed on the front and back</p>
+                
+                <p class="detailText">Ships within 2 days</p>
+                <p class="detailText">All sales are final</p>
+                <p class="detailText">Not associated or affiliated with FacePunch</p>
+               
+            </div>
+        </div>
+       
+        
+        <script src ="../script.js"></script>
+    </body>
+</html>

@@ -66,6 +66,8 @@ body{
     width: 100%;
     
     height:auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     
@@ -367,6 +369,8 @@ h1{
 }
 .thumbnails{
   width: 20%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
   cursor: pointer;
 }
 .sizing-container input[type="checkbox"]:checked ~ .menu-items1{
@@ -421,6 +425,7 @@ h1{
   font-family: Kl9yfont;
   border-radius: 4px;
   cursor: pointer;
+  color: gray;
 }
 
 .colorOptions label:hover {
@@ -534,7 +539,7 @@ h1{
 .cartRemoveBtn{
   all: unset; 
   text-decoration: none;
-  background: rgb(44, 44, 44); 
+  background: #121212; 
   font-family: Kl9yFont; 
   margin-left: 10px; 
   cursor: pointer; 
@@ -697,6 +702,7 @@ h1{
     }
     .prodImg{
         width: 90%;
+        
     }
 
     .container {
