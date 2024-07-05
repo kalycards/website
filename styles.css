@@ -522,6 +522,8 @@ h1{
   margin-top: 20px; 
   margin-bottom: 20px; 
   margin-left: 5%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 .cartItemName{
   padding-left: 10%; 
@@ -654,6 +656,78 @@ h1{
 
 
 
+
+
+.contact-form-container-kai {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #1e1e1e;
+  border-radius: 5px;
+  box-shadow: 0 0 10px black;
+  background-color: #1e1e1e;
+}
+
+.contact-header-kai {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #ce6ee9;
+  font-family: Kl9yFont;
+}
+
+.contact-subtext-kai, .email-info-kai {
+  text-align: left;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: white;
+  font-family: Kl9yFont;
+}
+
+.label-kai {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: white;
+  font-family: Kl9yFont;
+}
+
+.input-kai, .textarea-kai {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: black;
+  color:white;
+}
+
+.textarea-kai {
+  resize: vertical;
+}
+
+.send-button-kai {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #ce6ee9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  font-family: Kl9yFont;
+}
+
+.send-button-kai:hover {
+  background-color: #eaa8fc
+}
+
+
+
 @media (max-width: 500px){
     .buyingDiv{
         background-color: blue;
@@ -733,6 +807,8 @@ h1{
         margin-top: 20px; 
         margin-bottom: 20px; 
         margin-left: 2%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
       }
       .cartItemName{
         padding-left: 5%; 

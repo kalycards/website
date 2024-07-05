@@ -11,26 +11,46 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <script src="script.js"></script>
         <div class="cartContainer">
             <a href="https://kalycards.com/cart"><img class="cart" src="assets/cart.png"></a> 
             <script>totalCart()</script>
         </div>
         <div class="logoHolder">
-            <a href="https://kl9y.com"><img class="kl9yLogo2" src="imgs/KlayCardPurpsm.png"></a>
+            <a href="https://kalycards.com"><img class="kl9yLogo2" src="imgs/KlayCardPurpsm.png"></a>
         </div>
 
-        <script src="script.js"></script>
+        
 
 
-         <div style="margin-top:3%"></div>
-         <h1 class="emailsHeader">OUR EMAIL</h1>
-         <p class="contactText"> 
-            info@kalycards.com
-         </p>
+       <script>renderNav()</script>
          
-         
+       <div class="contact-form-container-kai">
+        <h2 class="contact-header-kai">Contact Us</h2>
         
+        <p class="email-info-kai">Our Email : info @ kalycards.com</p>
+
+        <p class="email-info-kai">If you have a custom request, send us an email and it might end up on our store !</p>
+
+        <!-- Form with correct action, method, and enctype attributes -->
+        <form class="contact-form-kai" action="mailto:info@kalycards.com" method="POST" enctype="text/plain">
+            <label for="name-kai" class="label-kai">Name</label>
+            <input type="text" id="name-kai" class="input-kai" name="name" required>
+
+            <label for="email-kai" class="label-kai">Email</label>
+            <input type="email" id="email-kai" class="input-kai" name="email" required>
+
+            <label for="subject-kai" class="label-kai">Subject</label>
+            <input type="text" id="subject-kai" class="input-kai" name="subject" required>
+
+            <label for="message-kai" class="label-kai">Message</label>
+            <textarea id="message-kai" class="textarea-kai" name="message" rows="6" required></textarea>
+
+            <button type="submit" class="send-button-kai">Send Message</button>
+        </form>
+    </div>
+        <div style = "margin-bottom:200px"></div>
         
-        <script src ="../script.js"></script>
+      
     </body>
 </html>

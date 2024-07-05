@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dunder Mifflin Card</title>
+        <link rel="icon" type="image/x-icon" href="../imgs/KlayCardPurpsm.png">
+        <meta name="description" content="Rust Key Card | Real Plastic Key Cards | Red Key Card Blue Key Card Green Key Card">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    <body>
+        <script src ="../script.js"></script>
+        <div class="cartContainer">
+            <a href="https://kalycards.com/cart"><img alt="cart" class="cart" src="../assets/cart.png"></a> 
+            <script>totalCart()</script>
+        </div>
+        <div class="logoHolder">
+            <a href="https://kalycards.com"><img alt="Klay Card Logo" class="kl9yLogo2" src="../imgs/KlayCardPurpsm.png"></a>
+        </div>
+        
+        
+
+
+        
+        <div class="prodMain">
+            <div class="prodImg">
+                <img alt="product image" id="productImage" src="../imgs/cards/dunder-mifflin/michael2.jpg" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+                <div class="imageThumbnails">
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/dunder-mifflin/michael2.jpg" onclick="changeRadio('colorM')">
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/dunder-mifflin/spin.gif" onclick="changeRadio('colorM'); changeImage2(this)">
+
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/dunder-mifflin/dwight2.jpg" onclick="changeRadio('colorDw')">
+        
+                    
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/dunder-mifflin/pam2.jpg" onclick="changeRadio('colorPam')">
+       
+
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/dunder-mifflin/jim2.jpg" onclick="changeRadio('colorJim')">
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/dunder-mifflin/stanley2.jpg" onclick="changeRadio('colorStan')">
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/dunder-mifflin/creed2.jpg" onclick="changeRadio('colorCreed')">
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/dunder-mifflin/spin2.gif" onclick="changeRadio('colorAll'); changeImage2(this)">
+                    
+
+                    
+                
+                </div>
+            </div>
+            <div class="prodDetails">
+                <h1>DUNDER MIFFLIN ID CARD</h1>
+                <p class="priceText" id="priceTextLine">$ 6</p>
+                <div id="productIdForCart" class="dev">price_1PYeCRCSLHJXbRq8X0pKaT8D</div>
+
+                <div class="colorOptions">
+                    <input type="radio" id="colorM" name="color" value="m" onchange="updateBuyNowLink2(`window.location.href='https://buy.stripe.com/dR614t55167raD65km';`,
+                    '../imgs/cards/dunder-mifflin/michael2.jpg',
+                    ['price_1PYeCRCSLHJXbRq8X0pKaT8D'],
+                     `$ 6`
+                    )" checked>
+                    <label for="colorM">Michael</label>
+
+                    <input type="radio" id="colorDw" name="color" value="dw" onchange="updateBuyNowLink2(`window.location.href='https://buy.stripe.com/9AQ3cB5510N78uYbIP';`, 
+                    '../imgs/cards/dunder-mifflin/dwight2.jpg',
+                    ['price_1PYfcRCSLHJXbRq8GGVFfXOM'], 
+                    `$ 6`
+                    )" >
+                    <label for="colorDw">Dwight</label>
+
+
+
+                    <input type="radio" id="colorPam" name="color" value="pam" onchange="updateBuyNowLink2(`window.location.href='https://buy.stripe.com/9AQ8wV0OL1Rb9z24gm';`, 
+                    '../imgs/cards/dunder-mifflin/pam2.jpg',
+                    ['price_1PYfdFCSLHJXbRq8R47u7hzr'], 
+                    `$ 6`
+                    )" >
+                    <label for="colorPam">Pam</label>
+
+                    <input type="radio" id="colorJim" name="color" value="jim" onchange="updateBuyNowLink2(`window.location.href='https://buy.stripe.com/eVa8wVbtp67rbHa7sx';`, 
+                    '../imgs/cards/dunder-mifflin/jim2.jpg',
+                    ['price_1PYfe2CSLHJXbRq8trUeio9n'], 
+                    `$ 6`
+                    )" >
+                    <label for="colorJim">Jim</label>
+
+
+                    <input type="radio" id="colorStan" name="color" value="stan" onchange="updateBuyNowLink2(`window.location.href='https://buy.stripe.com/eVa8wVbtp67rbHa7sx';`,
+                     '../imgs/cards/dunder-mifflin/stanley2.jpg',
+                    ['price_1PYfe2CSLHJXbRq8trUeio9n'], 
+                    `$ 6`
+                    )" >
+                    <label for="colorStan">Stan</label>
+
+                    <input type="radio" id="colorCreed" name="color" value="creed" onchange="updateBuyNowLink2(`window.location.href='https://buy.stripe.com/eVa8wVbtp67rbHa7sx';`,
+                     '../imgs/cards/dunder-mifflin/creed2.jpg',
+                    ['price_1PYfe2CSLHJXbRq8trUeio9n'], 
+                    `$ 6`
+                    )" >
+                    <label for="colorCreed">Creed</label>
+
+                    <input type="radio" id="colorAll" name="color" value="all" onchange="updateBuyNowLink2(`window.location.href='https://buy.stripe.com/eVa8wVbtp67rbHa7sx';`, 
+                    '../imgs/cards/dunder-mifflin/spin.gif',
+                    ['price_1PYfe2CSLHJXbRq8trUeio9n'], 
+                    `$ 25`
+                    )" >
+                    <label for="colorAll">All 6</label>
+            
+
+                    
+                </div>
+                <button id="buyNowBtn" class="buyNowBtn" onclick="window.location.href='https://buy.stripe.com/dR614t55167raD65km';">BUY NOW</button>
+   
+                <button  class="buyNowBtn" onclick="addToCart(productImage.src)">ADD TO CART</button> 
+
+                <p class = "detailText">DETAILS</p>
+                <p class="detailText">3.375in x 2.125in, 30mil thick</p>
+                <p class="detailText">PVC Plastic</p>
+                <p class="detailText">Professionally printed on the front and back</p>
+                
+                <p class="detailText">Ships within 2 days</p>
+                <p class="detailText">All sales are final</p>
+                <p class="detailText">Not associated or affiliated with FacePunch</p>
+               
+            </div>
+        </div>
+       
+        
+        <script src ="../script.js"></script>
+    </body>
+</html>
