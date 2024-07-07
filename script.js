@@ -152,7 +152,11 @@ function updateBuyNowLink(newURL, updatedIMG, arrayOfNewIds) {
 function changeImageHover(element, imagePath) {
     element.src = imagePath;
   }
-
+  function handleTouch(element, newSrc) {
+    event.preventDefault();
+    element.src = newSrc;
+    element.focus();
+}
 
 function sizing(){
     document.write(`
