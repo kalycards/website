@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Overwatch License Prop</title>
+        <link rel="icon" type="image/x-icon" href="../imgs/KlayCardPurpsm.png">
+        <meta name="description" content="Overwatch License Prop ID Card | Overwatch2 Drivers License">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    <body>
+        <script src ="../script.js"></script>
+        <div class="cartContainer">
+            <a href="https://kalycards.com/cart"><img alt="cart" class="cart" src="../assets/cart.png"></a> 
+            <script>totalCart()</script>
+        </div>
+        <div class="logoHolder">
+            <a href="https://kalycards.com"><img alt="Klay Card Logo" class="kl9yLogo2" src="../imgs/KlayCardPurpsm.png"></a>
+        </div>
+        
+        
+
+
+        
+        <div class="prodMain">
+            <div class="prodImg">
+                <img alt="product image" id="productImage" src="../imgs/cards/overwatch-license/tracer.jpg" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+                <div class="imageThumbnails">
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/overwatch-license/tracer.jpg" onclick="changeRadio('colorWhite')">
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/overwatch-license/spin.gif" onclick="changeRadio('colorBlue'); changeImage2(this)">
+
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/overwatch-license/mercy.jpg" onclick="changeRadio('colorBlue')">
+        
+                    
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/overwatch-license/winston.jpg" onclick="changeRadio('colorGreen')">
+       
+
+                    
+                    
+                
+                </div>
+            </div>
+            <div class="prodDetails">
+                <h1>OVERWATCH LICENSE PROP</h1>
+                <p class="priceText" id="priceTextLine">$ 6</p>
+                <div id="productIdForCart" class="dev">price_1PZifLCSLHJXbRq8PLBAmhJB</div>
+
+                <div class="colorOptions">
+                    <input type="radio" id="colorWhite" name="color" value="white" onchange="updateBuyNowLink2(
+                        `window.location.href='https://buy.stripe.com/7sIbJ769553n8uY7sV';` ,
+                        '../imgs/cards/overwatch-license/tracer.jpg',
+                    ['price_1PZifLCSLHJXbRq8PLBAmhJB'], `$ 6`
+                    )" checked>
+                    <label for="colorWhite">TRACER</label>
+
+                    <input type="radio" id="colorBlue" name="color" value="blue" onchange="updateBuyNowLink2(
+                        `window.location.href='https://buy.stripe.com/bIY7sRgNJ53n8uY5kM';`,
+                         '../imgs/cards/overwatch-license/mercy.jpg',
+                    ['price_1PZifcCSLHJXbRq8uEFeghMt'], `$ 6`
+                    )" >
+                    <label for="colorBlue">MERCY</label>
+
+
+
+                    <input type="radio" id="colorGreen" name="color" value="green" onchange="updateBuyNowLink2(
+                        `window.location.href='https://buy.stripe.com/bIY3cBdBxcvP5iM6oP';`,
+                         '../imgs/cards/overwatch-license/winston.jpg',
+                    ['price_1PZifuCSLHJXbRq8YAVJ5Hwn'], `$ 6`
+                    )" >
+                    <label for="colorGreen">WINSTON</label>
+
+                    <input type="radio" id="colorAll" name="color" value="all" onchange="updateBuyNowLink2(
+                        `window.location.href='https://buy.stripe.com/5kA00p0OL0N73aE7sS';`, 
+                        '../imgs/cards/overwatch-license/tracer.jpg',
+                    ['price_1PZihtCSLHJXbRq8szomd8vL'], `$ 6`
+                    )" >
+                    <label for="colorAll">OTHER</label>
+            
+
+                    
+                </div>
+                <button id="buyNowBtn" class="buyNowBtn" onclick="window.location.href='https://buy.stripe.com/7sIbJ769553n8uY7sV';">BUY NOW</button>
+   
+                <button  class="buyNowBtn" onclick="addToCart(productImage.src)">ADD TO CART</button> 
+
+                <p class = "detailText">DETAILS</p>
+                <p class="detailText">3.375in x 2.125in, 30mil thick</p>
+                <p class="detailText">PVC Plastic</p>
+                <p class="detailText">Professionally printed on the front</p>
+                <p class="detailText">For decoration purposes only. Not a real ID.</p>
+                
+                <p class="detailText">Ships within 2 days</p>
+                <p class="detailText">All sales are final</p>
+                <p class="detailText">Not associated or affiliated with Blizzard</p>
+               
+            </div>
+        </div>
+       
+        
+        <script src ="../script.js"></script>
+    </body>
+</html>
