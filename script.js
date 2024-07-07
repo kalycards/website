@@ -155,11 +155,9 @@ function changeImageHover(element, imagePath) {
   function handleTouch(element, newSrc) {
     event.preventDefault();
     element.src = newSrc;
-    //element.focus();
+    element.focus();
 
-    setTimeout(function() {
-      window.location.href = element.parentNode.href;
-  }, 300); 
+    
 }
 
 function sizing(){
