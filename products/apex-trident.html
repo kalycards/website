@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Apex Legends Trident License</title>
+        <link rel="icon" type="image/x-icon" href="../imgs/KlayCardPurpsm.png">
+        <meta name="description" content="Apex Legends Trident License | Wraith ID Card | Apex Legends Gift">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    <body>
+        <script src ="../script.js"></script>
+        <div class="cartContainer">
+            <a href="https://kalycards.com/cart"><img alt="cart" class="cart" src="../assets/cart.png"></a> 
+            <script>totalCart()</script>
+        </div>
+        <div class="logoHolder">
+            <a href="https://kalycards.com"><img alt="Klay Card Logo" class="kl9yLogo2" src="../imgs/KlayCardPurpsm.png"></a>
+        </div>
+        
+        
+
+        <script>renderNav()</script>
+        
+        <div class="prodMain">
+            <div class="prodImg">
+                <img alt="product image" id="productImage" src="../imgs/cards/apex-trident/wraith.jpg" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+                <div class="imageThumbnails">
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/apex-trident/wraith.jpg" onclick="changeRadio('colorWhite')">
+                    
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/apex-trident/spin.gif" onclick="changeImage2(this)">
+
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/apex-trident/wraith.jpg" onclick="changeRadio('colorBlack')">
+                
+                </div>
+            </div>
+            <div class="prodDetails">
+                <h1>APEX LEGENDS TRIDENT LICENSE</h1>
+                <p class="priceText" id="priceTextLine">$ 6</p>
+                <div id="productIdForCart" class="dev">price_1PaASbCSLHJXbRq8wOP9v3Ct</div>
+
+                <div class="colorOptions">
+                    <input type="radio" id="colorWhite" name="color" value="white" onchange="updateBuyNowLink2(
+                        `window.location.href='https://buy.stripe.com/14k6oN9lh9jD6mQbJe';` ,
+                        '../imgs/cards/apex-trident/wraith.jpg',
+                    ['price_1PaASbCSLHJXbRq8wOP9v3Ct'], `$ 6`
+                    )" checked>
+                    <label for="colorWhite">Wraith</label>
+
+                    <input type="radio" id="colorBlack" name="color" value="black" onchange="updateBuyNowLink2(
+                        `window.location.href='https://buy.stripe.com/dR66oN0OL67rfXq14B';`,
+                         '../imgs/cards/apex-trident/wraith.jpg',
+                    ['price_1PaAT6CSLHJXbRq84Rvd8J8v'], `$ 6`
+                    )" >
+                    <label for="colorBlack">Other</label>
+            
+
+                    
+                </div>
+                <button id="buyNowBtn" class="buyNowBtn" onclick="window.location.href='https://buy.stripe.com/14k6oN9lh9jD6mQbJe';">BUY NOW</button>
+   
+                <button  class="buyNowBtn" onclick="addToCart(productImage.src)">ADD TO CART</button> 
+
+                <p class = "detailText">DETAILS</p>
+                <p class="detailText">3.375in x 2.125in, 30mil thick</p>
+                <p class="detailText">PVC Plastic</p>
+                <p class="detailText">Professionally printed on the front</p>
+                
+                <p class="detailText">Ships within 2 days</p>
+                <p class="detailText">All sales are final</p>
+             
+               
+            </div>
+        </div>
+       
+        
+        <script src ="../script.js"></script>
+    </body>
+</html>
