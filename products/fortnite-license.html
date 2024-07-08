@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Fortnite Battle Bus License</title>
+        <link rel="icon" type="image/x-icon" href="../imgs/KlayCardPurpsm.png">
+        <meta name="description" content="Fortnite Battle Bus License | Fortnite Gag Gift | Renegade Raider">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    <body>
+        <script src ="../script.js"></script>
+        <div class="cartContainer">
+            <a href="https://kalycards.com/cart"><img alt="cart" class="cart" src="../assets/cart.png"></a> 
+            <script>totalCart()</script>
+        </div>
+        <div class="logoHolder">
+            <a href="https://kalycards.com"><img alt="Klay Card Logo" class="kl9yLogo2" src="../imgs/KlayCardPurpsm.png"></a>
+        </div>
+        
+        
+
+        <script>renderNav()</script>
+        
+        <div class="prodMain">
+            <div class="prodImg">
+                <img alt="product image" id="productImage" src="../imgs/cards/fortnite-license/renegade.jpg" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+                <div class="imageThumbnails">
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/fortnite-license/renegade.jpg" onclick="changeRadio('colorWhite')">
+                    
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/fortnite-license/spin.gif" onclick="changeImage2(this)">
+
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/fortnite-license/renegade.jpg" onclick="changeRadio('colorBlack')">
+                
+                </div>
+            </div>
+            <div class="prodDetails">
+                <h1>FORTNITE BATTLE BUS LICENSE</h1>
+                <p class="priceText" id="priceTextLine">$ 6</p>
+                <div id="productIdForCart" class="dev">price_1Pa8QwCSLHJXbRq8ANiTRtMq</div>
+
+                <div class="colorOptions">
+                    <input type="radio" id="colorWhite" name="color" value="white" onchange="updateBuyNowLink2(
+                        `window.location.href='https://buy.stripe.com/28o4gF551gM56mQdRk';` ,
+                        '../imgs/cards/fortnite-license/renegade.jpg',
+                    ['price_1Pa8QwCSLHJXbRq8ANiTRtMq'], `$ 6`
+                    )" checked>
+                    <label for="colorWhite">Renegade Raider</label>
+
+                    <input type="radio" id="colorBlack" name="color" value="black" onchange="updateBuyNowLink2(
+                        `window.location.href='https://buy.stripe.com/9AQdRf1SP2VfeTm14z';`,
+                         '../imgs/cards/fortnite-license/renegade.jpg',
+                    ['price_1Pa8SLCSLHJXbRq8TBTIlFgj'], `$ 6`
+                    )" >
+                    <label for="colorBlack">Other</label>
+            
+
+                    
+                </div>
+                <button id="buyNowBtn" class="buyNowBtn" onclick="window.location.href='https://buy.stripe.com/28o4gF551gM56mQdRk';">BUY NOW</button>
+   
+                <button  class="buyNowBtn" onclick="addToCart(productImage.src)">ADD TO CART</button> 
+
+                <p class = "detailText">DETAILS</p>
+                <p class="detailText">3.375in x 2.125in, 30mil thick</p>
+                <p class="detailText">PVC Plastic</p>
+                <p class="detailText">Professionally printed on the front, and back for 2nd image</p>
+                
+                <p class="detailText">Ships within 2 days</p>
+                <p class="detailText">All sales are final</p>
+             
+               
+            </div>
+        </div>
+       
+        
+        <script src ="../script.js"></script>
+    </body>
+</html>
