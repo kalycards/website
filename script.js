@@ -152,12 +152,62 @@ function updateBuyNowLink(newURL, updatedIMG, arrayOfNewIds) {
 function changeImageHover(element, imagePath) {
     element.src = imagePath;
   }
-  function handleTouch(element, newSrc) {
-    event.preventDefault();
-    element.src = newSrc;
-    element.focus();
 
-    
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const productImages = document.querySelectorAll('.imgA img');
+
+    productImages.forEach(img => {
+        const originalSrc = img.dataset.originalSrc;
+        const hoverSrc = img.dataset.hoverSrc;
+
+        // Apply hover effects for desktop
+        if (!isMobile()) {
+            img.addEventListener('mouseover', () => {
+                changeImageHover(img, hoverSrc);
+            });
+
+            img.addEventListener('mouseout', () => {
+                changeImageHover(img, originalSrc);
+            });
+        }
+
+        // Handle touch start and end for mobile
+        img.addEventListener('touchstart', () => {
+            handleTouchStart(img, hoverSrc);
+        });
+
+        img.addEventListener('touchend', () => {
+            handleTouchEnd(img, originalSrc);
+        });
+    });
+
+    // Restore images when the page is shown (useful for navigating back)
+    window.addEventListener('pageshow', restoreOriginalImages);
+});
+
+function isMobile() {
+    return /Mobi|Android/i.test(navigator.userAgent);
+}
+
+function changeImageHover(element, newSrc) {
+    element.src = newSrc;
+}
+
+function handleTouchStart(element, hoverSrc) {
+    // No action on touch start to avoid conflicts with scrolling.
+}
+
+function handleTouchEnd(element, originalSrc) {
+    // No action on touch end to avoid changing the image back on tap.
+}
+
+function restoreOriginalImages() {
+    const productImages = document.querySelectorAll('.imgA img');
+
+    productImages.forEach(img => {
+        img.src = img.dataset.originalSrc;
+    });
 }
 
 function sizing(){
