@@ -40,6 +40,9 @@
 
                     <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/boaters-license/spongebob.jpg" onclick="changeRadio('colorAll')">
 
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/milkshake-license/milkshake-license.jpg" onclick="changeRadio('colorMilk')">
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/boaters-license/millionth-dollar.jpg" onclick="changeRadio('colorDol')">
+
                     
                 
                 </div>
@@ -78,7 +81,21 @@
                      '../imgs/cards/boaters-license/spongebob.jpg',
                     ['price_1PZ5ZWCSLHJXbRq8xc5eV2NG'], `$ 15`
                     )" >
-                    <label for="colorAll">ALL</label>
+                    <label for="colorAll">3 Licenses</label>
+
+                    <input type="radio" id="colorMilk" name="color" value="milk" onchange="updateBuyNowLink2(
+                        `window.location.href='https://buy.stripe.com/eVaeVj9lh0N712wdQR';`,
+                     '../imgs/cards/milkshake-license/milkshake-license.jpg',
+                    ['price_1PYe3hCSLHJXbRq8y0tldNHu'], `$ 6`
+                    )" >
+                    <label for="colorMilk">MILKSHAKE</label>
+
+                    <input type="radio" id="colorDol" name="color" value="dol" onchange="updateBuyNowLink2(
+                        `window.location.href='https://buy.stripe.com/3cs8wV6958fzdPi28J';`,
+                     '../imgs/cards/boaters-license/millionth-dollar.jpg',
+                    ['price_1PaXvsCSLHJXbRq8KNdpojGo'], `$ 6`
+                    )" >
+                    <label for="colorDol">DOLLAR</label>
             
 
                     
