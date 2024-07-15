@@ -40,8 +40,9 @@
                     <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/mario-kart/yoshi.jpg" onclick="changeRadio('colorJim')">
                     <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/mario-kart/bowser.jpg" onclick="changeRadio('colorStan')">
                     <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/mario-kart/peach.jpg" onclick="changeRadio('colorCreed')">
-                    
 
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/mario-kart/yoshinewBG.jpg" onclick="changeRadio('colorSpec')">
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/mario-kart/spin1.gif" onclick="changeRadio('colorSpec'); changeImage2(this)">
                     
                 
                 </div>
@@ -102,6 +103,15 @@
                     `$ 6`
                     )" >
                     <label for="colorCreed">Peach</label>
+
+
+                    <input type="radio" id="colorSpec" name="color" value="spec" onchange="updateBuyNowLink2(
+                        `window.location.href='https://buy.stripe.com/5kA00paplbrLaD6eVF';`,
+                     '../imgs/cards/mario-kart/yoshinewBG.jpg',
+                    ['price_1Pci7LCSLHJXbRq8XVSwIO7K'], 
+                    `$ 6`
+                    )" >
+                    <label for="colorSpec">Special Edition</label>
 
             
 
