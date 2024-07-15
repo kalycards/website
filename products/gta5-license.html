@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GTA 5 License</title>
+        <link rel="icon" type="image/x-icon" href="../imgs/KlayCardPurpsm.png">
+        <meta name="description" content="Grand Theft Auto V Drivers License | Michael De Santa | Franklin | Trevor License | GTA5 Gift">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    <body>
+        <script src ="../script.js"></script>
+        <div class="cartContainer">
+            <a href="https://kalycards.com/cart"><img alt="cart" class="cart" src="../assets/cart.png"></a> 
+            <script>totalCart()</script>
+        </div>
+        <div class="logoHolder">
+            <a href="https://kalycards.com"><img alt="Klay Card Logo" class="kl9yLogo2" src="../imgs/KlayCardPurpsm.png"></a>
+        </div>
+        
+        <script>renderNav()</script>
+
+
+        
+        <div class="prodMain">
+            <div class="prodImg">
+                <img alt="product image" id="productImage" src="../imgs/cards/gtav-license/michael.jpg" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+                <div class="imageThumbnails">
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/gtav-license/michael.jpg" onclick="changeRadio('colorWhite')">
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/gtav-license/spin.gif" onclick="changeRadio('colorWhite'); changeImage2(this)">
+
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/gtav-license/trevor.jpg" onclick="changeRadio('colorBlue')">
+        
+                    
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/gtav-license/franklin.jpg" onclick="changeRadio('colorGreen')">
+       
+
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/gtav-license/combo.jpg" onclick="changeRadio('colorAll')">
+
+                    
+                
+                </div>
+            </div>
+            <div class="prodDetails">
+                <h1>GTA5 DRIVER LICENSE</h1>
+                <p class="priceText" id="priceTextLine">$ 6</p>
+                <div id="productIdForCart" class="dev">price_1Pcd5ACSLHJXbRq8I8LxOflN</div>
+
+                <div class="colorOptions">
+                    <input type="radio" id="colorWhite" name="color" value="white" onchange="updateBuyNowLink2(
+                        `window.location.href='https://buy.stripe.com/8wMaF36957bv7qU3cS';` ,
+                        '../imgs/cards/gtav-license/michael.jpg',
+                    ['price_1Pcd5ACSLHJXbRq8I8LxOflN'], `$ 6`
+                    )" checked>
+                    <label for="colorWhite">MICHAEL</label>
+
+                    <input type="radio" id="colorBlue" name="color" value="blue" onchange="updateBuyNowLink2(
+                        `window.location.href='https://buy.stripe.com/aEU00pbtp2VffXq3cR';`,
+                         '../imgs/cards/gtav-license/trevor.jpg',
+                    ['price_1Pcd5kCSLHJXbRq8aQ2YHwG0'], `$ 6`
+                    )" >
+                    <label for="colorBlue">TREVOR</label>
+
+
+
+                    <input type="radio" id="colorGreen" name="color" value="green" onchange="updateBuyNowLink2(
+                        `window.location.href='https://buy.stripe.com/14k28xdBx9jD6mQ3cQ';`,
+                         '../imgs/cards/gtav-license/franklin.jpg',
+                    ['price_1Pcd6eCSLHJXbRq8XgUrDiEW'], `$ 6`
+                    )" >
+                    <label for="colorGreen">FRANKLIN</label>
+
+                    <input type="radio" id="colorAll" name="color" value="all" onchange="updateBuyNowLink2(
+                        `window.location.href='https://buy.stripe.com/6oE28x40XanH4eIaFh';`,
+                         '../imgs/cards/gtav-license/combo.jpg',
+                    ['price_1Pcd7aCSLHJXbRq8odn2Wbon'], `$ 15`
+                    )" >
+                    <label for="colorAll">ALL</label>
+            
+
+                    
+                </div>
+                <button id="buyNowBtn" class="buyNowBtn" onclick="window.location.href='https://buy.stripe.com/8wMaF36957bv7qU3cS';">BUY NOW</button>
+   
+                <button  class="buyNowBtn" onclick="addToCart(productImage.src)">ADD TO CART</button> 
+
+                <p class = "detailText">DETAILS</p>
+                <p class="detailText">3.375in x 2.125in, 30mil thick</p>
+                <p class="detailText">PVC Plastic</p>
+                <p class="detailText">Professionally printed on the front</p>
+                
+                <p class="detailText">Ships within 2 days</p>
+                <p class="detailText">All sales are final</p>
+                <p class="detailText">Not associated or affiliated with Rockstar</p>
+               
+            </div>
+        </div>
+       
+        
+        <script src ="../script.js"></script>
+    </body>
+</html>
