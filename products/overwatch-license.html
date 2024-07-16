@@ -36,7 +36,8 @@
                     
                     <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/overwatch-license/winston.jpg" onclick="changeRadio('colorGreen')">
        
-
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/overwatch-license/owspecial.jpg" onclick="changeRadio('colorSpec')">
+       
                     
                     
                 
@@ -77,6 +78,14 @@
                     ['price_1PZihtCSLHJXbRq8szomd8vL'], `$ 6`
                     )" >
                     <label for="colorAll">OTHER</label>
+
+
+                    <input type="radio" id="colorSpec" name="color" value="spec" onchange="updateBuyNowLink2(
+                        `window.location.href='https://buy.stripe.com/bIY14teFB1RbfXq14R';`, 
+                        '../imgs/cards/overwatch-license/owspecial.jpg',
+                    ['price_1PcyVVCSLHJXbRq8Rxgq04xR'], `$ 6`
+                    )" >
+                    <label for="colorSpec">SPECIAL EDITION</label>
             
 
                     
@@ -86,6 +95,7 @@
                 <button  class="buyNowBtn" onclick="addToCart(productImage.src)">ADD TO CART</button> 
 
                 <p class = "detailText">DETAILS</p>
+                <p class="detailText">Choose any hero for the Special Edition version</p>
                 <p class="detailText">3.375in x 2.125in, 30mil thick</p>
                 <p class="detailText">PVC Plastic</p>
                 <p class="detailText">Professionally printed on the front</p>
