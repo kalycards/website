@@ -23,6 +23,7 @@ function renderNav(){
           <li><a href="https://kalycards.com/">Home</a></li>
           
           <li><a href="https://kalycards.com/contact">Contact</a></li>
+          <li><a href="https://kalycards.com/faq">FAQ</a></li>
         </div>
       </div>
     </div>
@@ -41,6 +42,15 @@ function renderNav(){
             
             <li class="dropdown1">
                 <a class="navElem" href="https://kalycards.com/contact">Contact</a>
+            </li>
+
+            <li style="display: inline;">
+                <a class="navElem">|</a>
+            </li>
+            
+            
+            <li class="dropdown1">
+                <a class="navElem" href="https://kalycards.com/faq">FAQ</a>
             </li>
             
         </ul>

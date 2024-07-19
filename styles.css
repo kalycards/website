@@ -684,6 +684,14 @@ h1{
   font-family: Kl9yFont;
 }
 
+.contact-subtext-kai, .email-info-kai2 {
+  text-align: left;
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: white;
+ 
+}
+
 .label-kai {
   display: block;
   text-align: left;
