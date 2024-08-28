@@ -48,7 +48,14 @@
                          '../imgs/cards/fortnite-license/renegade.jpg',
                     ['price_1Pk9jMCSLHJXbRq8KirQG8TV'], `$ 9`
                     )" checked>
-                    <label for="colorBlack">Custom</label>
+                    <label for="colorBlack">standard</label>
+
+                    <input type="radio" id="colorWhite" name="color" value="white" onchange="updateBuyNowLink2(
+                        `window.location.href='https://buy.stripe.com/00g9AZ5511Rb3aEdRL';`,
+                         '../imgs/cards/fortnite-license/renegade.jpg',
+                    ['price_1Psf3DCSLHJXbRq8ghoQFn73'], `$ 14`
+                    )" >
+                    <label for="colorWhite">with reboot</label>
             
 
                     
@@ -58,6 +65,7 @@
                 <button  class="buyNowBtn" onclick="addToCart(productImage.src)">ADD TO CART</button> 
 
                 <p class = "detailText">DETAILS</p>
+                <p class="detailText">Add a reboot card to the back side of your license with the "WITH REBOOT" option!</p>
                 <p class="detailText">3.375in x 2.125in, 30mil thick</p>
                 <p class="detailText">PVC Plastic</p>
                 <p class="detailText">Professionally printed on the front</p>
