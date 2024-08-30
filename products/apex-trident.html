@@ -28,47 +28,30 @@
             <div class="prodImg">
                 <img alt="product image" id="productImage" src="../imgs/cards/apex-trident/wraith.jpg" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
                 <div class="imageThumbnails">
-                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/apex-trident/wraith.jpg" onclick="changeRadio('colorWhite')">
                     
-                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/apex-trident/spin.gif" onclick="changeImage2(this)">
-
-                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/apex-trident/wraith.jpg" onclick="changeRadio('colorBlack')">
                     <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/apex-trident/specialedition.jpg" onclick="changeRadio('colorSE')">
                     <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/apex-trident/spinSE.gif" onclick="changeRadio('colorSE'); changeImage2(this)">
                 </div>
             </div>
             <div class="prodDetails">
                 <h1>APEX LEGENDS TRIDENT LICENSE</h1>
-                <p class="priceText" id="priceTextLine">$ 6</p>
-                <div id="productIdForCart" class="dev">price_1PaASbCSLHJXbRq8wOP9v3Ct</div>
+                <p class="priceText" id="priceTextLine">$ 9</p>
+                <div id="productIdForCart" class="dev">price_1PtIW8CSLHJXbRq8wu4CO74P</div>
 
                 <div class="colorOptions">
-                    <input type="radio" id="colorWhite" name="color" value="white" onchange="updateBuyNowLink2(
-                        `window.location.href='https://buy.stripe.com/14k6oN9lh9jD6mQbJe';` ,
-                        '../imgs/cards/apex-trident/wraith.jpg',
-                    ['price_1PaASbCSLHJXbRq8wOP9v3Ct'], `$ 6`
-                    )" checked>
-                    <label for="colorWhite">Wraith</label>
-
-                    <input type="radio" id="colorBlack" name="color" value="black" onchange="updateBuyNowLink2(
-                        `window.location.href='https://buy.stripe.com/dR66oN0OL67rfXq14B';`,
-                         '../imgs/cards/apex-trident/wraith.jpg',
-                    ['price_1PaAT6CSLHJXbRq84Rvd8J8v'], `$ 6`
-                    )" >
-                    <label for="colorBlack">Other</label>
-
+                    
 
                     <input type="radio" id="colorSE" name="color" value="se" onchange="updateBuyNowLink2(
-                        `window.location.href='https://buy.stripe.com/6oE9AZfJFanHfXq28W';`,
+                        `window.location.href='https://buy.stripe.com/cN2dRfgNJ53n7qUaFA';`,
                          '../imgs/cards/apex-trident/specialedition.jpg',
-                    ['price_1Pd4k2CSLHJXbRq8LdZSZlXx'], `$ 6`
-                    )" >
-                    <label for="colorSE">SPECIAL EDITION</label>
+                    ['price_1PtIW8CSLHJXbRq8wu4CO74P'], `$ 9`
+                    )" checked>
+                    <label for="colorSE">ANY LEGEND</label>
             
 
                     
                 </div>
-                <button id="buyNowBtn" class="buyNowBtn" onclick="window.location.href='https://buy.stripe.com/14k6oN9lh9jD6mQbJe';">BUY NOW</button>
+                <button id="buyNowBtn" class="buyNowBtn" onclick="window.location.href='https://buy.stripe.com/cN2dRfgNJ53n7qUaFA';">BUY NOW</button>
    
                 <button  class="buyNowBtn" onclick="addToCart(productImage.src)">ADD TO CART</button> 
 
