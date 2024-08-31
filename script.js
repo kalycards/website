@@ -159,6 +159,32 @@ function updateBuyNowLink(newURL, updatedIMG, arrayOfNewIds) {
     }
 
 
+    function updateBuyNowLink3( updatedIMG, arrayOfNewIds, newPrice) {
+      document.getElementById("productIdForCart").innerHTML = " ";
+        
+    
+        if(arrayOfNewIds.length == 1){
+          document.getElementById("productIdForCart").innerHTML = arrayOfNewIds[0];
+          const priceTextElement = document.getElementById("priceTextLine");
+          priceTextElement.innerText = newPrice;
+          changeImage(updatedIMG);
+          return;
+        }
+    
+        if(arrayOfNewIds.length > 0){
+          document.getElementById("pId1").innerText = arrayOfNewIds[0];
+          document.getElementById("pId2").innerText =  arrayOfNewIds[1];
+          document.getElementById("pId3").innerText =  arrayOfNewIds[2];
+          document.getElementById("pId4").innerText =  arrayOfNewIds[3];
+          document.getElementById("sizeBtn").innerText = "SELECT SIZE";
+        }
+  
+        const priceTextElement = document.getElementById("priceTextLine");
+        priceTextElement.innerText = newPrice;
+        changeImage(updatedIMG);
+      }
+
+
 function changeImageHover(element, imagePath) {
     element.src = imagePath;
   }

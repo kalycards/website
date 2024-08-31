@@ -30,34 +30,55 @@
                 <div class="imageThumbnails">
                     <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/reboot/reboot.jpg" onclick="changeRadio('colorWhite')">
                     
-                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/reboot/spin.gif" onclick="changeImage2(this)">
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/reboot/spin.gif" onclick="changeRadio('colorWhite');changeImage2(this)">
+
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/reboot/silver.jpg" onclick="changeRadio('colorBlack')">
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/reboot/gold.jpg" onclick="changeRadio('colorGold')">
+
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/reboot/reboot.jpg" onclick="changeRadio('colorFour')">
                 
                 </div>
             </div>
             <div class="prodDetails">
                 <h1>REBOOT CARD</h1>
-                <p class="priceText">$ 9</p>
+                <p class="priceText" id="priceTextLine">$ 9</p>
                 <div id="productIdForCart" class="dev">price_1PqKK0CSLHJXbRq8YujOBavq</div>
 
                 <div class="colorOptions">
-                    <input type="radio" id="colorWhite" name="color" value="white" onchange="updateBuyNowLink(`window.location.href='https://buy.stripe.com/7sI3cB1SPfI13aE6pi';` ,'../imgs/cards/reboot/reboot.jpg',
-                    ['price_1PqKK0CSLHJXbRq8YujOBavq']
+                    <input type="radio" id="colorWhite" name="color" value="white" onchange="updateBuyNowLink3( '../imgs/cards/reboot/reboot.jpg',
+                    ['price_1PqKK0CSLHJXbRq8YujOBavq'], `$ 9`
                     )" checked>
                     <label for="colorWhite">Double Sided</label>
+
+
+                    <input type="radio" id="colorBlack" name="color" value="black" onchange="updateBuyNowLink3('../imgs/cards/reboot/silver.jpg',
+                    ['price_1PteF5CSLHJXbRq83I1Vuxvl'] , `$ 9`
+                    )" >
+                    <label for="colorBlack">SILVER [1 sided]</label>
+
+                    <input type="radio" id="colorGold" name="color" value="gold" onchange="updateBuyNowLink3('../imgs/cards/reboot/gold.jpg',
+                    ['price_1PteFqCSLHJXbRq8wpXsgNgX'] , `$ 9`
+                    )" >
+                    <label for="colorGold">GOLDEN [1 sided]</label>
+
+                    <input type="radio" id="colorFour" name="color" value="four" onchange="updateBuyNowLink3('../imgs/cards/reboot/reboot.jpg',
+                    ['price_1PteIeCSLHJXbRq8S15EwoGB'] , `$ 27`
+                    )" >
+                    <label for="colorFour">SQUAD PACK [4 cards]</label>
+
 
                    
             
 
                     
                 </div>
-                <button id="buyNowBtn" class="buyNowBtn" onclick="window.location.href='https://buy.stripe.com/7sI3cB1SPfI13aE6pi';">BUY NOW</button>
    
                 <button  class="buyNowBtn" onclick="addToCart(productImage.src)">ADD TO CART</button> 
 
                 <p class = "detailText">DETAILS</p>
                 <p class="detailText">3.375in x 2.125in, 30mil thick</p>
                 <p class="detailText">PVC Plastic</p>
-                <p class="detailText">Professionally printed on the front and back</p>
+                <p class="detailText">Professionally printed</p>
                 <p class="detailText">Ships within 2 days</p>
                 <p class="detailText">Not associated or affiliated with Epic Games</p>
                
