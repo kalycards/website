@@ -32,40 +32,63 @@
                     
                     <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/fortnite-license/spin.gif" onclick="changeImage2(this)">
 
-                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/fortnite-license/renegade.jpg" onclick="changeRadio('colorBlack')">
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/fortnite-license/renegade2.jpg" onclick="changeRadio('colorTilt')">
+
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/cards/fortnite-license/back.png" onclick="changeImage2(this)">
+                    
+
+                  
                 
                 </div>
             </div>
             <div class="prodDetails">
-                <h1>FORTNITE BATTLE BUS LICENSE</h1>
-                <p class="priceText" id="priceTextLine">$ 9</p>
-                <div id="productIdForCart" class="dev">price_1Pk9jMCSLHJXbRq8KirQG8TV</div>
+                <h1>CUSTOM FORTNITE BATTLE BUS LICENSE</h1>
+                <p class="priceText" id="priceTextLine">$ 12</p>
+                <div id="productIdForCart" class="dev">price_1PykdaCSLHJXbRq8V8AGWUdg</div>
 
                 <div class="colorOptions">
                     
-                    <input type="radio" id="colorBlack" name="color" value="black" onchange="updateBuyNowLink2(
-                        `window.location.href='https://buy.stripe.com/eVaeVj6951Rb3aE4h7';`,
+                    <input type="radio" id="colorBlack" name="color" value="black" onchange="updateBuyNowLink3(
+                    
                          '../imgs/cards/fortnite-license/renegade.jpg',
-                    ['price_1Pk9jMCSLHJXbRq8KirQG8TV'], `$ 9`
+                    ['price_1PykdaCSLHJXbRq8V8AGWUdg'], `$ 12`
                     )" checked>
                     <label for="colorBlack">standard</label>
 
-                    <input type="radio" id="colorWhite" name="color" value="white" onchange="updateBuyNowLink2(
-                        `window.location.href='https://buy.stripe.com/00g9AZ5511Rb3aEdRL';`,
+
+                    <input type="radio" id="colorTilt" name="color" value="tilt" onchange="updateBuyNowLink3(
+                 
+                         '../imgs/cards/fortnite-license/renegade2.jpg',
+                    ['price_1Pykd0CSLHJXbRq8Xlffd7Hv'], `$ 12`
+                    )" >
+                    <label for="colorTilt">tilted</label>
+
+
+
+                    <input type="radio" id="colorWhite" name="color" value="white" onchange="updateBuyNowLink3(
+                
                          '../imgs/cards/fortnite-license/renegade.jpg',
                     ['price_1Psf3DCSLHJXbRq8ghoQFn73'], `$ 14`
                     )" >
-                    <label for="colorWhite">with reboot</label>
-            
+                    <label for="colorWhite">standard + reboot</label>
 
+                    <input type="radio" id="colorTilt2" name="color" value="tilt2" onchange="updateBuyNowLink3(
+                
+                         '../imgs/cards/fortnite-license/renegade2.jpg',
+                    ['price_1PykQyCSLHJXbRq8HjUdfHT1'], `$ 14`
+                    )" >
+                    <label for="colorTilt2">tilted + reboot</label>
+            
+                    
                     
                 </div>
-                <button id="buyNowBtn" class="buyNowBtn" onclick="window.location.href='https://buy.stripe.com/eVaeVj6951Rb3aE4h7';">BUY NOW</button>
+              
    
                 <button  class="buyNowBtn" onclick="addToCart(productImage.src)">ADD TO CART</button> 
 
                 <p class = "detailText">DETAILS</p>
                 <p class="detailText">Add a reboot card to the back side of your license with the "WITH REBOOT" option!</p>
+                <p class="detailText">PICK ANY SKIN!</p>
                 <p class="detailText">3.375in x 2.125in, 30mil thick</p>
                 <p class="detailText">PVC Plastic</p>
                 <p class="detailText">Professionally printed on the front</p>
